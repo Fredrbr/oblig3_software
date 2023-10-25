@@ -19,6 +19,8 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21.0.1'
+          distribution: "adopt"
+          cache: maven
 
       - name: Build Maven
         run: mvn -B package --file pom.xml
