@@ -8,7 +8,7 @@ public class LeapYearTest {
     public void testDivisibleBy4ButNot100R() {
         Year LeapYear = new Year();
 
-        assertTrue(LeapYear.isLeapYear(2003));
+        assertTrue(LeapYear.isLeapYear(2004));
         assertTrue(LeapYear.isLeapYear(2008));
         assertTrue(LeapYear.isLeapYear(2012));
         assertTrue(LeapYear.isLeapYear(2016));
@@ -19,7 +19,7 @@ public class LeapYearTest {
     public void testDivisibleBy400() {
         Year LeapYear = new Year();
 
-        assertTrue(LeapYear.isLeapYear(1601));
+        assertTrue(LeapYear.isLeapYear(1600));
         assertTrue(LeapYear.isLeapYear(2000));
         assertTrue(LeapYear.isLeapYear(2400));
         assertTrue(LeapYear.isLeapYear(2800));
@@ -41,7 +41,7 @@ public class LeapYearTest {
     public void testYearDivisibleBy100NotBy400() {
         Year LeapYear = new Year();
 
-        assertFalse(LeapYear.isLeapYear(1701));
+        assertFalse(LeapYear.isLeapYear(1700));
         assertFalse(LeapYear.isLeapYear(1800));
         assertFalse(LeapYear.isLeapYear(1900));
         assertFalse(LeapYear.isLeapYear(2100));
