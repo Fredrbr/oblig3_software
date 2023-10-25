@@ -8,7 +8,7 @@ public class testing {
     public void testDivisibleBy4ButNot100() {
         Year LeapYear = new Year();
 
-        assertTrue(LeapYear.isLeapYear(2004));
+        assertTrue(LeapYear.isLeapYear(2003));
         assertTrue(LeapYear.isLeapYear(2008));
         assertTrue(LeapYear.isLeapYear(2012));
         assertTrue(LeapYear.isLeapYear(2016));
